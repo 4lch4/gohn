@@ -1,0 +1,25 @@
+version: 3
+
+tasks:
+  format:
+    desc: Uses the gofmt CLI tool to format the codebase.
+    aliases:
+      - f
+    cmds:
+      - gofmt -w .
+
+  build:
+    desc: Builds the project by using the go build command.
+    aliases:
+      - bd
+    cmds:
+      - go build
+
+  push:
+    desc: Push any git changes and tags to the remote repository.
+    aliases:
+      - p
+    cmds:
+      - git push
+      - git push --tags
+
